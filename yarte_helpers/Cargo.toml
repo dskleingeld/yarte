@@ -23,7 +23,6 @@ fixed = ["v_htmlescape", "itoa", "ryu-ad"]
 markup = ["v_htmlescape", "itoa", "dtoa"]
 bytes-buf = ["buf-min", "v_htmlescape", "itoa", "ryu-ad"]
 logger = ["bat", "tempfile", "toolchain_find"]
-regex-fancy = ["bat/regex-fancy"]
 
 [badges]
 travis-ci = { repository = "botika/yarte", branch = "master" }
@@ -45,7 +44,7 @@ buf-min = { version = "0.1", optional = true}
 
 # TODO: PR to update incompatible dirs "^1"
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
-bat = { version = "0.15", optional = true }
+bat = { version = "0.15", optional = true, features = ["atty", "clap", "dirs", "git", "lazy_static", "liquid", "paging", "wild", "regex-fancy"]}
 tempfile = { version = "3.0", optional = true }
 toolchain_find = { version = "0.1", optional = true }
 
