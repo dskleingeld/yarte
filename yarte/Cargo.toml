@@ -24,6 +24,7 @@ json = ["yarte_helpers/json", "yarte_derive/json", "bytes-buf"]
 html-min = ["yarte_derive/html-min"]
 fixed = ["yarte_helpers/fixed", "yarte_derive/fixed"]
 bytes-buf = ["buf-min", "yarte_helpers/bytes-buf", "yarte_derive/bytes-buf"]
+regex-fancy = ["yarte_helpers/regex-fancy"]
 
 [dependencies]
 yarte_derive = { version = "0.12.2", path = "../yarte_derive" }

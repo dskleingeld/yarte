@@ -23,6 +23,7 @@ fixed = ["v_htmlescape", "itoa", "ryu-ad"]
 markup = ["v_htmlescape", "itoa", "dtoa"]
 bytes-buf = ["buf-min", "v_htmlescape", "itoa", "ryu-ad"]
 logger = ["bat", "tempfile", "toolchain_find"]
+regex-fancy = ["bat/regex-fancy"]
 
 [badges]
 travis-ci = { repository = "botika/yarte", branch = "master" }
